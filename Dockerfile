@@ -7,7 +7,6 @@ RUN yum install -y wget
 RUN yum groupinstall -y development
 RUN yum install -y httpd
 
-#
 #configure php
 RUN yum install -y php
 RUN yum install -y php-devel
@@ -53,7 +52,6 @@ RUN npm install -g phantomjs
 
 #install ember-cli
 RUN npm install -g ember-cli
-#RUN ember update
 
 #configure httpd.conf
 RUN rm -rf /var/www/cgi-bin
